@@ -13,7 +13,19 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 list-style-type: none;
+}
+@media (max-width: 600px) {
+    #menu-horizontal ul {
+        flex-wrap: wrap;
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
     }
+
+    #menu-horizontal ul li {
+        flex: 1 1 50%; /* Cada item ocupará 50% da largura, ajustando-se em duas linhas */
+        text-align: center; /* Centraliza o texto no item */
+        padding: 10px 0; /* Ajuste de padding para melhorar o espaçamento vertical */
+    }
+}
 #menu-horizontal ul li {
 margin-left: 25px;
 margin-right: 25px;
